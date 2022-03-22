@@ -51,6 +51,4 @@ export default class VideoPlayer {
         this.bindTriggers();
         this.bindCloseBtn();
     }
-
-
 }
