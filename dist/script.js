@@ -2763,6 +2763,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_slider_slider_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/slider/slider-main */ "./src/js/modules/slider/slider-main.js");
 /* harmony import */ var _modules_playVideo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/playVideo */ "./src/js/modules/playVideo.js");
 /* harmony import */ var _modules_slider_slider_mini__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider/slider-mini */ "./src/js/modules/slider/slider-mini.js");
+!(function webpackMissingModule() { var e = new Error("Cannot find module './modules/slider/difference'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 
 
@@ -2800,6 +2802,7 @@ window.addEventListener('DOMContentLoaded', function () {
   feedSlider.init();
   var player = new _modules_playVideo__WEBPACK_IMPORTED_MODULE_1__["default"]('.showup .play', '.overlay');
   player.init();
+  new !(function webpackMissingModule() { var e = new Error("Cannot find module './modules/slider/difference'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())('.officerold', '.officernew', '.officer__card-item').init();
 });
 
 /***/ }),
@@ -3180,7 +3183,6 @@ function (_Slider) {
     value: function init() {
       var _this3 = this;
 
-      // console.log(this.next, this.prev, this.container);
       this.container.style.cssText = "\n            display: flex;\n            flex-wrap: wrap;\n            overflow: hidden;\n            align-items:flex-start;\n        ";
       this.bindTriggers();
       this.decorizeSlides();
