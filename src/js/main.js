@@ -1,7 +1,7 @@
 import MainSlider from "./modules/slider/slider-main";
 import VideoPlayer from "./modules/playVideo";
 import MiniSlider from "./modules/slider/slider-mini";
-import Difference from "./modules/slider/difference";
+import Difference from "./modules/differ";
 
 
 window.addEventListener('DOMContentLoaded', () => {
