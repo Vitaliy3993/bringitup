@@ -8,8 +8,11 @@ import Forms from "./modules/form";
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
-    const slider = new MainSlider({btns: '.next', container: '.page'});
+    const slider = new MainSlider({btns: '.next', container: '.moduleapp'});
     slider.render();
+
+    const ModulePageSlider = new MainSlider({btns: '.next', container: '.page'});
+    ModulePageSlider.render();
 
     const showUpSlider = new MiniSlider({
         container: '.showup__content-slider',
@@ -38,16 +41,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
     feedSlider.init();
 
-    const player = new VideoPlayer('.showup .play', '.overlay');
-    player.init();
+    new VideoPlayer('.showup .play', '.overlay').init();
+    new VideoPlayer('.module__video-item .play', '.overlay').init();
 
     new Difference('.officerold', '.officernew', '.officer__card-item').init();
     
     new Forms('.form').init();
-
-
-    
-
 
 
 
