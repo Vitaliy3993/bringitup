@@ -39,7 +39,18 @@ export default class Difference {
         } catch(e) {}
     }
 
-
+    /* showAccordion() {
+        document.querySelector('.module__info-show .plus').addEventListener('click', () => {
+            const text = document.querySelector('.msg');
+            if (text.style.display == 'flex') {
+                text.style.display = 'none';
+                text.classList.remove('animated', 'fadeInUp');
+            } else {
+                text.style.display = 'flex';
+                text.classList.add('animated', 'fadeInUp');
+            }   
+        });
+    } */
 
     init() {
         try {
@@ -48,6 +59,7 @@ export default class Difference {
 
             this.hideItems(this.newItems);
             this.hideItems(this.oldItems);
+            /* this.showAccordion(); */
         } catch(e) {}
     }
 }

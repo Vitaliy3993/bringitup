@@ -3,6 +3,8 @@ import VideoPlayer from "./modules/playVideo";
 import MiniSlider from "./modules/slider/slider-mini";
 import Difference from "./modules/differ";
 import Forms from "./modules/form";
+import ShowInfo from "./modules/showInfo";
+import Download from "./modules/download";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -48,6 +50,9 @@ window.addEventListener('DOMContentLoaded', () => {
     
     new Forms('.form').init();
 
+    new ShowInfo('.plus__content').init();
+
+    new Download('.download').init();
 
 
 });
